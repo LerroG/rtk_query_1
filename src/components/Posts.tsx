@@ -16,7 +16,8 @@ const Posts: FC = () => {
 
 	const handleCreate = async () => {
 		const title = prompt();
-		await createPost({ title, body: title } as IPost);
+		// await createPost({ title, body: title } as IPost);
+		console.log({ title, body: title })
 	};
 
 	const handleRemove = (post: IPost) => {
